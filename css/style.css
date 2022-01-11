@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('../../_theme/Marketing FREE XD/Bg\ Shape.svg');
+    background-image: url('../Marketing FREE XD/Bg Shape');
     background-position: top right;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ body {
 
 /* biography */
 .bg {
-    background-image: url('../../_theme/Marketing FREE XD/bg.svg');
+    background-image: url('../Marketing FREE XD/bg.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -321,7 +321,7 @@ body {
 /* footer */
 .footer {
     height: 400px;
-    background-image: url("../../_theme/Marketing FREE XD/footer1.svg") , url("../../_theme/Marketing FREE XD/footer2.svg");
+    background-image: url("../Marketing FREE XD/footer1.svg") , url("../Marketing FREE XD/footer2.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
