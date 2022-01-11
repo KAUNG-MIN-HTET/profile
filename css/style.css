@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../../_theme/Marketing FREE XD/Bg\ Shape.svg');
+    background-position: top right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+/* loading */
+.loader {
+    z-index: 2000;
+}
+
+.loading1 {
+    width: 10px;
+    height: 50px;
+    background-color: blue;
+
+    animation: load1 1s linear infinite;
+}
+
+.loading2 {
+    width: 10px;
+    height: 50px;
+    background-color: red;
+
+    animation: load2 1s linear infinite;
+}
+
+.loading3 {
+    width: 10px;
+    height: 50px;
+    background-color: green;
+
+    animation: load3 1s linear infinite;
+}
+
+@keyframes load1 {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.3);
+    }
+}
+
+@keyframes load2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.3);
+    }
+}
+
+@keyframes load3 {
+    0%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(0.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.ani-delay-1 {
+    animation-delay: 0.5s;
+}
+
+.ani-delay-2 {
+    animation-delay: 0.75s;
+}
+
+.ani-delay-3 {
+    animation-delay: 1s;
+}
+
+.ani-delay-4 {
+    animation-delay: 1.25s;
+}
+
+.ani-delay-5 {
+    animation-delay: 1.5s;
+}
+
+.ani-delay-6 {
+    animation-delay: 1.75s;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .nav-link {
+        cursor: pointer;
+        color: #000000;
+    }
+
+    .nav-link:hover {
+        color: #1A129F !important;
+    }
+}
+
+.side-nav {
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+}
+
+.color-change {
+    color: black;
+}
+
+.add-color {
+    color: #1A129F;
+    border-bottom: 3px solid #1A129F;
+}
+
+/* home */
+.all-height {
+    height: 500px;
+}
+
+.move-arrow {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(-10px);
+    }
+    25%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+
+    }
+    
+}
+
+.animate {
+    animation: bouncing 2s ease-in-out infinite;
+}
+
+@keyframes bouncing {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.radius {
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.home {
+    position: relative;
+}
+
+.scroll-to-next {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(202, 198, 198);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-to-next img {
+    width: 15px;
+    cursor: pointer;
+}
+
+.social-v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .scroll-to-next {
+        bottom: -10%;
+        left: 90%;
+    }
+
+    .social-v {
+        bottom: 40%;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .social-v {
+        left: 30px;
+    }
+}
+
+/* biography */
+.bg {
+    background-image: url('../../_theme/Marketing FREE XD/bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 480px){
+    .biography .all-height {
+        height: 800px;
+    }
+}
+
+.font-size {
+    font-size: 12px;
+}
+
+/* service */
+.service .card {
+    height: 380px;
+    position: relative;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.service .card:hover {
+    transform: scale(1.05);
+}
+
+.service .card button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* pricing */
+.pricing {
+    background-color: #7E76F915;
+}
+
+.pricing .card {
+    border-radius: 20px;
+    border: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.pricing .card button {
+    border-radius: 20px;
+}
+
+.pricing .card:hover {
+    transform: scale(1.05);
+}
+
+.slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #1A129F;
+    padding: 0;
+}
+.slick-dots li button::before {
+    content: '';
+    opacity: 0;
+}
+
+.slick-dots li.slick-active button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #1A129F;
+    padding: 0;
+    background: #1A129F
+}
+
+/* footer */
+.footer {
+    height: 400px;
+    background-image: url("../../_theme/Marketing FREE XD/footer1.svg") , url("../../_theme/Marketing FREE XD/footer2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 990px) {
+    .footer {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        height: 800px;
+        background-size: cover;
+    }
+}
