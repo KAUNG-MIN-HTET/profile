@@ -223,8 +223,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .scroll-to-next {
-        bottom: -10%;
-        left: 90%;
+        display: none;
     }
 
     .social-v {
